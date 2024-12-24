@@ -221,26 +221,8 @@
             <button id="doneButton" class="btn-primary">🔐 Log In Now</button>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    const userData = localStorage.getItem("user");
-
-    if (!userData) {
-        setTimeout(() => {
-            document.getElementById("background-light").style.display = "flex";
-        }, 5000);
-    }
-
-    document.getElementById("doneButton").addEventListener("click", () => {
-        window.location.href = "/login";
-    });
-});
-    const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('mobile-active');
-});
+    <script src="booking.js">
+       
 
     </script>
 </body>
